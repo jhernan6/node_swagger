@@ -1,0 +1,22 @@
+{
+  "name": "node_swagger",
+  "version": "1.0.0",
+  "description": "Simple To Do app created with Node JS and Swagger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhernan6/node_swagger.git"
+  },
+  "author": "Jose Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhernan6/node_swagger/issues"
+  },
+  "homepage": "https://github.com/jhernan6/node_swagger#readme",
+  "dependencies": {
+    "swagger": "^0.7.5"
+  }
+}
