@@ -46,15 +46,26 @@ paths:
     x-swagger-pipe: swagger_raw
 # complex objects have schema definitions
 definitions:
-  HelloWorldResponse:
-    required:
-      - message
+  Todo:
+    type: "object"
     properties:
-      message:
-        type: string
-  ErrorResponse:
-    required:
-      - message
-    properties:
-      message:
-        type: string
+      todo_id:
+        type: "integer"
+        description: "ID for each todo task"
+      todo:
+        type: "string"
+        description: "Task to be completed"
+      date_created:
+        type: "string"
+        format: "date-type"
+        description: "Timestamp when the task was created set by the server"
+      author:
+        type: "string"
+        description: "Creator or owner of todo task"
+      due_date:
+        type : "string"
+        format: "date-type"
+        description: "When the todo task is due"
+      completed:
+        type: "boolean"
+        description: "Indicates if the todo task is complete"
